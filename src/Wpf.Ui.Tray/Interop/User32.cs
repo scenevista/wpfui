@@ -508,7 +508,7 @@ internal static class User32
 
         TABLET_DEFBASE = 0x02C0,
 
-        //WM_TABLET_MAXOFFSET = 0x20,
+        // WM_TABLET_MAXOFFSET = 0x20,
 
         TABLET_ADDED = TABLET_DEFBASE + 8,
         TABLET_DELETED = TABLET_DEFBASE + 9,
@@ -559,7 +559,7 @@ internal static class User32
         /// This is the hard-coded message value used by WinForms for Shell_NotifyIcon.
         /// It's relatively safe to reuse.
         /// </summary>
-        TRAYMOUSEMESSAGE = 0x800, //WM_USER + 1024
+        TRAYMOUSEMESSAGE = 0x800, // WM_USER + 1024
         APP = 0x8000,
     }
 
@@ -632,8 +632,8 @@ internal static class User32
         LAYOUTRTL = 0x00400000, // Right to left mirroring
         COMPOSITED = 0x02000000,
         NOACTIVATE = 0x08000000,
-        OVERLAPPEDWINDOW = (WINDOWEDGE | CLIENTEDGE),
-        PALETTEWINDOW = (WINDOWEDGE | TOOLWINDOW | TOPMOST),
+        OVERLAPPEDWINDOW = WINDOWEDGE | CLIENTEDGE,
+        PALETTEWINDOW = WINDOWEDGE | TOOLWINDOW | TOPMOST,
     }
 
     /// <summary>

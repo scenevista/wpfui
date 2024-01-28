@@ -12,8 +12,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// A custom WinUI Window with more convenience methods.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(FluentWindow), "FluentWindow.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(FluentWindow), "FluentWindow.bmp")]
 public class FluentWindow : System.Windows.Window
 {
     private WindowInteropHelper? _interopHelper = null;
@@ -85,6 +85,7 @@ public class FluentWindow : System.Windows.Window
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="FluentWindow"/> class.
     /// Creates new instance and sets default style.
     /// </summary>
     public FluentWindow()
@@ -93,6 +94,7 @@ public class FluentWindow : System.Windows.Window
     }
 
     /// <summary>
+    /// Initializes static members of the <see cref="FluentWindow"/> class.
     /// Overrides default properties.
     /// </summary>
     static FluentWindow()
@@ -209,7 +211,7 @@ public class FluentWindow : System.Windows.Window
     protected virtual void OnExtendsContentIntoTitleBarChanged(bool oldValue, bool newValue)
     {
         WindowStyle = WindowStyle.SingleBorderWindow;
-        //AllowsTransparency = true;
+        // AllowsTransparency = true;
 
         WindowChrome.SetWindowChrome(
             this,

@@ -31,7 +31,7 @@ internal static class UxTheme
         /// </summary>
         public int cxLeftWidth;
 
-        ///<summary>
+        /// <summary>
         /// Width of right border that retains its size.
         /// </summary>
         public int cxRightWidth;

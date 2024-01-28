@@ -26,7 +26,7 @@ internal static class DpiHelper
     /// <summary>
     /// Occurs when application DPI is changed.
     /// </summary>
-    //public static event EventHandler<DpiChangedEventArgs> DpiChanged;
+    // public static event EventHandler<DpiChangedEventArgs> DpiChanged;
 
     /// <summary>
     /// Gets DPI of the selected <see cref="Window"/>.

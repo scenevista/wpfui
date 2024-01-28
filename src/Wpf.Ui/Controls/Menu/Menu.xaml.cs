@@ -14,6 +14,7 @@ namespace Wpf.Ui.Styles.Controls
     partial class Menu : ResourceDictionary
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Menu"/> class.
         /// Sets menu alignment on initialization.
         /// </summary>
         public Menu() => Initialize();

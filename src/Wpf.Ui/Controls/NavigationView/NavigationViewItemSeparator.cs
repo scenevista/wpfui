@@ -14,6 +14,6 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Represents a line that separates menu items in a NavigationMenu.
 /// </summary>
-//[ToolboxItem(true)]
-//[System.Drawing.ToolboxBitmap(typeof(NavigationViewItemSeparator), "NavigationViewItemSeparator.bmp")]
+// [ToolboxItem(true)]
+// [System.Drawing.ToolboxBitmap(typeof(NavigationViewItemSeparator), "NavigationViewItemSeparator.bmp")]
 public class NavigationViewItemSeparator : System.Windows.Controls.Separator { }

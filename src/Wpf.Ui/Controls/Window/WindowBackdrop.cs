@@ -247,7 +247,7 @@ public static class WindowBackdrop
 
     private static bool ApplyLegacyMicaBackdrop(IntPtr hWnd)
     {
-        var backdropPvAttribute = 1; //Enable
+        var backdropPvAttribute = 1; // Enable
 
         // TODO: Validate HRESULT
         var dwmApiResult = Dwmapi.DwmSetWindowAttribute(

@@ -19,8 +19,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Represents a control that can be used to display and edit numbers.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(NumberBox), "NumberBox.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(NumberBox), "NumberBox.bmp")]
 public class NumberBox : Wpf.Ui.Controls.TextBox
 {
     private bool _valueUpdating;
@@ -331,16 +331,16 @@ public class NumberBox : Wpf.Ui.Controls.TextBox
     }
 
     /// <inheritdoc />
-    //protected override void OnTextChanged(System.Windows.Controls.TextChangedEventArgs e)
-    //{
+    // protected override void OnTextChanged(System.Windows.Controls.TextChangedEventArgs e)
+    // {
     //    base.OnTextChanged(e);
 
-    //    //if (new string[] { ",", ".", " " }.Any(s => Text.EndsWith(s)))
+    // //if (new string[] { ",", ".", " " }.Any(s => Text.EndsWith(s)))
     //    //    return;
 
-    //    //if (!_textUpdating)
+    // //if (!_textUpdating)
     //    //    UpdateValueToText();
-    //}
+    // }
 
     /// <inheritdoc />
     protected override void OnTemplateChanged(

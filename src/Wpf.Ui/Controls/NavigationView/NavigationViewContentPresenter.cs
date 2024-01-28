@@ -129,7 +129,7 @@ public class NavigationViewContentPresenter : Frame
     {
         base.OnInitialized(e);
 
-        //I didn't understand something, but why is it necessary?
+        // I didn't understand something, but why is it necessary?
         Unloaded += static (sender, _) =>
         {
             if (sender is NavigationViewContentPresenter navigator)

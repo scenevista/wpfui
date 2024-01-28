@@ -14,7 +14,7 @@ namespace Wpf.Ui.Hardware;
 public struct DisplayDpi
 {
     /// <summary>
-    /// Initializes a new instance of the System.Windows.DpiScale structure.
+    /// Initializes a new instance of the <see cref="DisplayDpi"/> structure.
     /// </summary>
     /// <param name="dpiScaleX">The DPI scale on the X axis.</param>
     /// <param name="dpiScaleY">The DPI scale on the Y axis.</param>
@@ -28,7 +28,7 @@ public struct DisplayDpi
     }
 
     /// <summary>
-    /// Initializes a new instance of the System.Windows.DpiScale structure.
+    /// Initializes a new instance of the <see cref="DisplayDpi"/> structure.
     /// </summary>
     /// <param name="dpiX">The DPI on the X axis.</param>
     /// <param name="dpiY">The DPI on the Y axis.</param>

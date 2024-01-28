@@ -18,6 +18,7 @@ namespace Wpf.Ui.Styles.Controls
     partial class ContextMenu : ResourceDictionary
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="ContextMenu"/> class.
         /// Registers editing <see cref="ContextMenu"/> styles with <see cref="Dispatcher"/>.
         /// </summary>
         public ContextMenu()

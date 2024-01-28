@@ -18,6 +18,6 @@ namespace Wpf.Ui.Controls;
 ///     NavigateUri="https://dev.lepo.co/" /&gt;
 /// </code>
 /// </example>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(Anchor), "Anchor.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(Anchor), "Anchor.bmp")]
 public class Anchor : Wpf.Ui.Controls.HyperlinkButton { }

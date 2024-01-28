@@ -11,8 +11,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Custom <see cref="System.Windows.Controls.ScrollViewer"/> with events depending on actions taken by the user.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(DynamicScrollViewer), "DynamicScrollViewer.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(DynamicScrollViewer), "DynamicScrollViewer.bmp")]
 [DefaultEvent("ScrollChangedEvent")]
 public class DynamicScrollViewer : PassiveScrollViewer
 {
@@ -105,15 +105,15 @@ public class DynamicScrollViewer : PassiveScrollViewer
         set => SetValue(TimeoutProperty, value);
     }
 
-    //protected override void OnPreviewMouseWheel(MouseWheelEventArgs e)
-    //{
+    // protected override void OnPreviewMouseWheel(MouseWheelEventArgs e)
+    // {
     //    base.OnPreviewMouseWheel(e);
-    //}
+    // }
 
-    //protected override void OnKeyDown(KeyEventArgs e)
-    //{
+    // protected override void OnKeyDown(KeyEventArgs e)
+    // {
     //    base.OnKeyDown(e);
-    //}
+    // }
 
     /// <summary>
     /// OnScrollChanged is an override called whenever scrolling state changes on this <see cref="DynamicScrollViewer"/>.
@@ -127,10 +127,10 @@ public class DynamicScrollViewer : PassiveScrollViewer
     {
         base.OnScrollChanged(e);
 
-        //#if DEBUG
+        // #if DEBUG
         //            System.Diagnostics.Debug.WriteLine($"DEBUG | {typeof(DynamicScrollBar)}.{nameof(e.VerticalChange)} - {e.VerticalChange}", "WPFUI");
         //            System.Diagnostics.Debug.WriteLine($"DEBUG | {typeof(DynamicScrollBar)}.{nameof(e.HorizontalChange)} - {e.HorizontalChange}", "WPFUI");
-        //#endif
+        // #endif
 
         if (e.HorizontalChange > _minimalChange || e.HorizontalChange < -_minimalChange)
             UpdateHorizontalScrollingState();

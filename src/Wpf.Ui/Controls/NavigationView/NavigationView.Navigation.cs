@@ -115,19 +115,19 @@ public partial class NavigationView
     {
         throw new NotImplementedException();
 
-        //if (Journal.Count <= 1)
-        //{
+        // if (Journal.Count <= 1)
+        // {
         //    return false;
-        //}
+        // }
 
-        //_currentIndexInJournal += 1;
+        // _currentIndexInJournal += 1;
 
-        //if (_currentIndexInJournal > Journal.Count - 1)
-        //{
+        // if (_currentIndexInJournal > Journal.Count - 1)
+        // {
         //    return false;
-        //}
+        // }
 
-        //return Navigate(Journal[_currentIndexInJournal]);
+        // return Navigate(Journal[_currentIndexInJournal]);
     }
 
     /// <inheritdoc />
@@ -349,8 +349,8 @@ public partial class NavigationView
 
         _ = frame.RemoveBackEntry();
 
-        //var replaced = 1;
-        //((NavigationViewContentPresenter)sender).JournalOwnership =
+        // var replaced = 1;
+        // ((NavigationViewContentPresenter)sender).JournalOwnership =
     }
 
     #region Navigation stack methods
@@ -462,7 +462,7 @@ public partial class NavigationView
         int arrayLength = NavigationStack.Count - 1 - startIndex;
         INavigationViewItem[] array;
 
-        //Initializing an array every time well... not an ideal
+        // Initializing an array every time well... not an ideal
 
 #if NET6_0_OR_GREATER
         array = System.Buffers.ArrayPool<INavigationViewItem>.Shared.Rent(arrayLength);

@@ -20,11 +20,12 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Represents a container that enables navigation of app content. It has a header, a view for the main content, and a menu pane for navigation commands.
 /// </summary>
-//[ToolboxItem(true)]
-//[System.Drawing.ToolboxBitmap(typeof(NavigationView), "NavigationView.bmp")]
+// [ToolboxItem(true)]
+// [System.Drawing.ToolboxBitmap(typeof(NavigationView), "NavigationView.bmp")]
 public partial class NavigationView : System.Windows.Controls.Control, INavigationView
 {
     /// <summary>
+    /// Initializes static members of the <see cref="NavigationView"/> class.
     /// Static constructor which overrides default property metadata.
     /// </summary>
     static NavigationView()
@@ -43,7 +44,7 @@ public partial class NavigationView : System.Windows.Controls.Control, INavigati
     {
         NavigationParent = this;
 
-        //It really should be here
+        // It really should be here
         MenuItems = new ObservableCollection<object>();
         FooterMenuItems = new ObservableCollection<object>();
 
@@ -124,7 +125,7 @@ public partial class NavigationView : System.Windows.Controls.Control, INavigati
 
     protected override void OnMouseDown(MouseButtonEventArgs e)
     {
-        //Back button
+        // Back button
         if (e.ChangedButton is MouseButton.XButton1)
         {
             GoBack();

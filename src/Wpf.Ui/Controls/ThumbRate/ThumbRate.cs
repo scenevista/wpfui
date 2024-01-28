@@ -11,8 +11,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Allows to rate positively or negatively by clicking on one of the thumbs.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(ThumbRate), "ThumbRate.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(ThumbRate), "ThumbRate.bmp")]
 public class ThumbRate : System.Windows.Controls.Control
 {
     /// <summary>
@@ -69,6 +69,7 @@ public class ThumbRate : System.Windows.Controls.Control
     public IRelayCommand TemplateButtonCommand => (IRelayCommand)GetValue(TemplateButtonCommandProperty);
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="ThumbRate"/> class.
     /// Creates new instance and attaches <see cref="TemplateButtonCommand"/>.
     /// </summary>
     public ThumbRate()

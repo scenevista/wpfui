@@ -144,7 +144,7 @@ public class Image : Control
         var thickness = (Thickness)d.GetValue(BorderThicknessProperty);
         var outerRarius = (CornerRadius)e.NewValue;
 
-        //Inner radius = Outer radius - thickenss/2
+        // Inner radius = Outer radius - thickenss/2
         d.SetValue(
             InnerCornerRadiusPropertyKey,
             new CornerRadius(

@@ -21,8 +21,8 @@ namespace Wpf.Ui.Controls;
 /// Represents the container for an item in a NavigationView control.
 /// When needed, it can be used as a normal button with a <see cref="System.Windows.Controls.Primitives.ButtonBase.Click"/> action.
 /// </summary>
-//[ToolboxItem(true)]
-//[System.Drawing.ToolboxBitmap(typeof(NavigationViewItem), "NavigationViewItem.bmp")]
+// [ToolboxItem(true)]
+// [System.Drawing.ToolboxBitmap(typeof(NavigationViewItem), "NavigationViewItem.bmp")]
 [TemplatePart(Name = TemplateElementChevronGrid, Type = typeof(Grid))]
 public class NavigationViewItem
     : System.Windows.Controls.Primitives.ButtonBase,

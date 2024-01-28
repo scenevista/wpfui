@@ -19,23 +19,23 @@ public partial class EditorWindow
         InitializeComponent();
     }
 
-    //    internal class EditorDataStack : INotifyPropertyChanged
+    // internal class EditorDataStack : INotifyPropertyChanged
     //    {
     //        public event PropertyChangedEventHandler PropertyChanged;
 
-    //        protected void OnPropertyChanged(string name)
+    // protected void OnPropertyChanged(string name)
     //        {
     //            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     //        }
 
-    //        private int
+    // private int
     //            _line = 1,
     //            _character = 0,
     //            _progress = 80;
 
-    //        private string _file = "Draft";
+    // private string _file = "Draft";
 
-    //        public int Line
+    // public int Line
     //        {
     //            get => _line;
     //            set
@@ -47,7 +47,7 @@ public partial class EditorWindow
     //            }
     //        }
 
-    //        public int Character
+    // public int Character
     //        {
     //            get => _character;
     //            set
@@ -59,7 +59,7 @@ public partial class EditorWindow
     //            }
     //        }
 
-    //        public int Progress
+    // public int Progress
     //        {
     //            get => _progress;
     //            set
@@ -71,7 +71,7 @@ public partial class EditorWindow
     //            }
     //        }
 
-    //        public string File
+    // public string File
     //        {
     //            get => _file;
     //            set
@@ -84,80 +84,80 @@ public partial class EditorWindow
     //        }
     //    }
 
-    //    private EditorDataStack DataStack = new();
+    // private EditorDataStack DataStack = new();
 
-    //    public string Line { get; set; } = "0";
+    // public string Line { get; set; } = "0";
 
-    //    public EditorWindow(EditorWindowViewModel viewModel)
+    // public EditorWindow(EditorWindowViewModel viewModel)
     //    {
     //        ViewModel = viewModel;
 
-    //        InitializeComponent();
+    // InitializeComponent();
 
-    //        DataContext = DataStack;
+    // DataContext = DataStack;
     //    }
 
-    //    private void MenuItem_OnClick(object sender, RoutedEventArgs e)
+    // private void MenuItem_OnClick(object sender, RoutedEventArgs e)
     //    {
     //        if (sender is not MenuItem item)
     //            return;
 
-    //        string tag = item?.Tag as string ?? String.Empty;
+    // string tag = item?.Tag as string ?? String.Empty;
 
-    //#if DEBUG
+    // #if DEBUG
     //        System.Diagnostics.Debug.WriteLine("DEBUG | Clicked: " + tag, "Wpf.Ui.Demo");
-    //#endif
+    // #endif
 
-    //        switch (tag)
+    // switch (tag)
     //        {
     //            case "exit":
     //                Close();
 
-    //                break;
+    // break;
 
-    //            case "save":
+    // case "save":
     //                Save();
 
-    //                break;
+    // break;
 
-    //            case "open":
+    // case "open":
     //                Open();
 
-    //                break;
+    // break;
 
-    //            case "new_file":
+    // case "new_file":
     //                RootTextBox.Document = new();
     //                DataStack.File = "Draft";
 
-    //                break;
+    // break;
 
-    //            case "new_window":
+    // case "new_window":
     //                EditorWindow editorWindow = new(ViewModel);
     //                editorWindow.Owner = this;
     //                editorWindow.Show();
 
-    //                break;
+    // break;
 
-    //            case "word_wrap":
+    // case "word_wrap":
     //                RootSnackbar.Title = "Word wrapping changed!";
     //                RootSnackbar.Message = "Currently word wrapping is " + (item.IsChecked ? "Enabled" : "Disabled");
     //                RootSnackbar.Show();
 
-    //                break;
+    // break;
 
-    //            case "status_bar":
+    // case "status_bar":
     //                RootStatusBar.Visibility = item.IsChecked ? Visibility.Visible : Visibility.Collapsed;
 
-    //                break;
+    // break;
 
-    //            default:
+    // default:
     //                ActionDialog.Show();
 
-    //                break;
+    // break;
     //        }
     //    }
 
-    //    private void Save()
+    // private void Save()
     //    {
     //        OpenFileDialog openFileDialog = new OpenFileDialog();
     //        if (openFileDialog.ShowDialog() == true)
@@ -167,7 +167,7 @@ public partial class EditorWindow
     //        }
     //    }
 
-    //    private void Open()
+    // private void Open()
     //    {
     //        OpenFileDialog openFileDialog = new OpenFileDialog();
     //        if (openFileDialog.ShowDialog() == true)
@@ -177,44 +177,44 @@ public partial class EditorWindow
     //        }
     //    }
 
-    //    private void UpdateLine()
+    // private void UpdateLine()
     //    {
     //        TextPointer caretPosition = RootTextBox.CaretPosition;
     //        TextPointer p = RootTextBox.Document.ContentStart.GetLineStartPosition(0);
 
-    //        RootTextBox.CaretPosition.GetLineStartPosition(-Int32.MaxValue, out int lineMoved);
+    // RootTextBox.CaretPosition.GetLineStartPosition(-Int32.MaxValue, out int lineMoved);
 
-    //        DataStack.Line = -lineMoved;
+    // DataStack.Line = -lineMoved;
     //        DataStack.Character = Math.Max(p.GetOffsetToPosition(caretPosition) - 1, 0);
     //    }
 
-    //    private void RootTextBox_OnGotFocus(object sender, RoutedEventArgs e)
+    // private void RootTextBox_OnGotFocus(object sender, RoutedEventArgs e)
     //    {
-    //#if DEBUG
+    // #if DEBUG
     //        System.Diagnostics.Debug.WriteLine("DEBUG | Editor got focus", "Wpf.Ui.Demo.Editor");
-    //#endif
+    // #endif
     //        UpdateLine();
     //    }
 
-    //    private void RootTextBox_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
+    // private void RootTextBox_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
     //    {
     //        if (e.ClickCount > 2)
     //            return;
-    //#if DEBUG
+    // #if DEBUG
     //        System.Diagnostics.Debug.WriteLine("DEBUG | Editor mouse down", "Wpf.Ui.Demo.Editor");
-    //#endif
+    // #endif
     //        UpdateLine();
     //    }
 
-    //    private void RootTextBox_OnPreviewKeyUp(object sender, KeyEventArgs e)
+    // private void RootTextBox_OnPreviewKeyUp(object sender, KeyEventArgs e)
     //    {
-    //#if DEBUG
+    // #if DEBUG
     //        System.Diagnostics.Debug.WriteLine("DEBUG | Editor key up", "Wpf.Ui.Demo.Editor");
-    //#endif
+    // #endif
     //        UpdateLine();
     //    }
 
-    //    private void ActionDialog_OnButtonRightClick(object sender, RoutedEventArgs e)
+    // private void ActionDialog_OnButtonRightClick(object sender, RoutedEventArgs e)
     //    {
     //        ActionDialog.Hide();
     //    }

@@ -294,7 +294,7 @@ public static class UnsafeNativeMethods
     /// <returns><see langword="true"/> if invocation of native Windows function succeeds.</returns>
     public static bool ApplyWindowLegacyMicaEffect(IntPtr handle)
     {
-        var backdropPvAttribute = 0x1; //Enable
+        var backdropPvAttribute = 0x1; // Enable
 
         // TODO: Validate HRESULT
         _ = Dwmapi.DwmSetWindowAttribute(
@@ -525,7 +525,7 @@ public static class UnsafeNativeMethods
         // #1 Remove titlebar elements
         var wtaOptions = new UxTheme.WTA_OPTIONS()
         {
-            dwFlags = (UxTheme.WTNCA.NODRAWCAPTION | UxTheme.WTNCA.NODRAWICON | UxTheme.WTNCA.NOSYSMENU),
+            dwFlags = UxTheme.WTNCA.NODRAWCAPTION | UxTheme.WTNCA.NODRAWICON | UxTheme.WTNCA.NOSYSMENU,
             dwMask = UxTheme.WTNCA.VALIDBITS
         };
 

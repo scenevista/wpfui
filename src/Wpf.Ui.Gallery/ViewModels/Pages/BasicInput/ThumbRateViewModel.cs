@@ -31,12 +31,12 @@ public partial class ThumbRateViewModel : ObservableObject
             };
 
             ThumRateStateCodeText =
-                $"<ui:ThumbRate State=\"{(value switch
+                $"<ui:ThumbRate State=\"{ value switch
                 {
                     ThumbRateState.Liked => "Liked",
                     ThumbRateState.Disliked => "Disliked",
                     _ => "None"
-                })}\" />";
+                }}\" />";
         }
     }
 }

@@ -11,8 +11,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Represents a text element containing an icon glyph.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(SymbolIcon), "SymbolIcon.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(SymbolIcon), "SymbolIcon.bmp")]
 public class SymbolIcon : FontIcon
 {
     /// <summary>

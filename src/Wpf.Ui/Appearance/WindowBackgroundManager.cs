@@ -114,47 +114,47 @@ public static class WindowBackgroundManager
         }
 
         // Do we really neeed this?
-        //if (!Win32.Utilities.IsOSWindows11OrNewer)
-        //{
+        // if (!Win32.Utilities.IsOSWindows11OrNewer)
+        // {
         //    var mainWindow = Application.Current.MainWindow;
 
-        //    if (mainWindow == null)
+        // if (mainWindow == null)
         //        return;
 
-        //    var backgroundColor = Application.Current.Resources["ApplicationBackgroundColor"];
+        // var backgroundColor = Application.Current.Resources["ApplicationBackgroundColor"];
         //    if (backgroundColor is Color color)
         //        mainWindow.Background = new SolidColorBrush(color);
-        //}
+        // }
 
 
-        //        var mainWindow = Application.Current.MainWindow;
+        // var mainWindow = Application.Current.MainWindow;
 
-        //        if (mainWindow == null)
+        // if (mainWindow == null)
         //            return;
 
-        //        // TODO: Do not refresh window presenter background if already applied
+        // // TODO: Do not refresh window presenter background if already applied
         //        var backgroundColor = Application.Current.Resources["ApplicationBackgroundColor"];
         //        if (backgroundColor is Color color)
         //            mainWindow.Background = new SolidColorBrush(color);
 
-        //#if DEBUG
+        // #if DEBUG
         //        System.Diagnostics.Debug.WriteLine($"INFO | Current background color: {backgroundColor}", "Wpf.Ui.Theme");
-        //#endif
+        // #endif
 
-        //        var windowHandle = new WindowInteropHelper(mainWindow).Handle;
+        // var windowHandle = new WindowInteropHelper(mainWindow).Handle;
 
-        //        if (windowHandle == IntPtr.Zero)
+        // if (windowHandle == IntPtr.Zero)
         //            return;
 
-        //        Background.Remove(windowHandle);
+        // Background.Remove(windowHandle);
 
-        //        //if (!IsAppMatchesSystem() || backgroundEffect == BackgroundType.Unknown)
+        // //if (!IsAppMatchesSystem() || backgroundEffect == BackgroundType.Unknown)
         //        //    return;
 
-        //        if (backgroundEffect == BackgroundType.Unknown)
+        // if (backgroundEffect == BackgroundType.Unknown)
         //            return;
 
-        //        // TODO: Improve
+        // // TODO: Improve
         //        if (Background.Apply(windowHandle, backgroundEffect, forceBackground))
         //            mainWindow.Background = Brushes.Transparent;
     }

@@ -417,6 +417,7 @@ public class TitleBar : System.Windows.Controls.Control, IThemeControl
     private readonly TitleBarButton[] _buttons = new TitleBarButton[4];
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="TitleBar"/> class.
     /// Creates a new instance of the class and sets the default <see cref="FrameworkElement.Loaded"/> event.
     /// </summary>
     public TitleBar()
@@ -603,8 +604,8 @@ public class TitleBar : System.Windows.Controls.Control, IThemeControl
             if (!button.ReactToHwndHook(message, lParam, out var returnIntPtr))
                 continue;
 
-            //It happens that the background is not removed from the buttons and you can make all the buttons are in the IsHovered=true
-            //It cleans up
+            // It happens that the background is not removed from the buttons and you can make all the buttons are in the IsHovered=true
+            // It cleans up
             foreach (var anotherButton in _buttons)
             {
                 if (anotherButton == button)
@@ -630,9 +631,10 @@ public class TitleBar : System.Windows.Controls.Control, IThemeControl
         switch (message)
         {
             case User32.WM.NCHITTEST
-                when (CloseWindowByDoubleClickOnIcon && _icon.IsMouseOverElement(lParam)):
+                when CloseWindowByDoubleClickOnIcon && _icon.IsMouseOverElement(lParam):
                 handled = true;
-                //Ideally, clicking on the icon should open the system menu, but when the system menu is opened manually, double-clicking on the icon does not close the window
+
+                // Ideally, clicking on the icon should open the system menu, but when the system menu is opened manually, double-clicking on the icon does not close the window
                 return (IntPtr)User32.WM_NCHITTEST.HTSYSMENU;
             case User32.WM.NCHITTEST when this.IsMouseOverElement(lParam) && !isMouseOverHeaderContent:
                 handled = true;

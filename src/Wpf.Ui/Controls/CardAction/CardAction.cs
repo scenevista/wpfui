@@ -11,11 +11,11 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Inherited from the <see cref="System.Windows.Controls.Primitives.ButtonBase"/> interactive card styled according to Fluent Design.
 /// </summary>
-//#if NETFRAMEWORK
+// #if NETFRAMEWORK
 //    //[ToolboxBitmap(typeof(Button))]
-//#endif
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(CardAction), "CardAction.bmp")]
+// #endif
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(CardAction), "CardAction.bmp")]
 public class CardAction : System.Windows.Controls.Primitives.ButtonBase
 {
     /// <summary>

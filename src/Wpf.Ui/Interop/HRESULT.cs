@@ -12,24 +12,24 @@ namespace Wpf.Ui.Interop;
 /// </summary>
 internal struct HRESULT
 {
-    ///<summary>
+    /// <summary>
     /// Operation successful.
-    ///</summary>
+    /// </summary>
     public const int S_OK = unchecked((int)0x00000000);
 
-    ///<summary>
+    /// <summary>
     /// Operation successful.
-    ///</summary>
+    /// </summary>
     public const int NO_ERROR = unchecked((int)0x00000000);
 
-    ///<summary>
+    /// <summary>
     /// Operation successful.
-    ///</summary>
+    /// </summary>
     public const int NOERROR = unchecked((int)0x00000000);
 
-    ///<summary>
+    /// <summary>
     /// Unspecified failure.
-    ///</summary>
+    /// </summary>
     public const int S_FALSE = unchecked((int)0x00000001);
 
     public static void Check(int hr)

@@ -36,7 +36,7 @@ public class IconSourceElement : IconElement
 
     protected override UIElement InitializeChildren()
     {
-        //TODO come up with an elegant solution
+        // TODO come up with an elegant solution
         throw new InvalidOperationException($"Use {nameof(IconSourceElementConverter)} class.");
     }
 }

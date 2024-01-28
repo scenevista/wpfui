@@ -120,19 +120,19 @@ public static class ApplicationThemeManager
             new Uri(ThemesDictionaryPath + themeDictionaryName + ".xaml", UriKind.Absolute)
         );
 
-        //var wpfUiDictionary = appDictionaries.GetDictionary("wpf.ui");
+        // var wpfUiDictionary = appDictionaries.GetDictionary("wpf.ui");
 
         // Force reloading ALL dictionaries
         // Works but is terrible
-        //var isCoreUpdated = appDictionaries.UpdateDictionary(
+        // var isCoreUpdated = appDictionaries.UpdateDictionary(
         //    "wpf.ui",
         //    new Uri(
         //        AppearanceData.LibraryDictionariesUri + "Wpf.Ui.xaml",
         //        UriKind.Absolute
         //    )
-        //);
+        // );
 
-        //var isBrushesUpdated = appDictionaries.UpdateDictionary(
+        // var isBrushesUpdated = appDictionaries.UpdateDictionary(
         //        "assets/brushes",
         //        new Uri(
         //            AppearanceData.LibraryDictionariesUri + "Assets/Brushes.xaml",

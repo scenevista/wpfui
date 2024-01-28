@@ -22,8 +22,8 @@ namespace Wpf.Ui.Controls;
 ///     Visibility="Visible" /&gt;
 /// </code>
 /// </example>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(Arc), "Arc.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(Arc), "Arc.bmp")]
 public class Arc : System.Windows.Shapes.Shape
 {
     /// <summary>
@@ -73,6 +73,7 @@ public class Arc : System.Windows.Shapes.Shape
     protected override Geometry DefiningGeometry => GetDefiningGeometry();
 
     /// <summary>
+    /// Initializes static members of the <see cref="Arc"/> class.
     /// Overrides default properties.
     /// </summary>
     static Arc()

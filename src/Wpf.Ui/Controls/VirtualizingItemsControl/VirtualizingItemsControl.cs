@@ -17,8 +17,8 @@ namespace Wpf.Ui.Controls;
 /// Virtualized <see cref="ItemsControl"/>.
 /// <para>Based on <see href="https://github.com/sbaeumlisberger/VirtualizingWrapPanel"/>.</para>
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(VirtualizingItemsControl), "VirtualizingItemsControl.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(VirtualizingItemsControl), "VirtualizingItemsControl.bmp")]
 public class VirtualizingItemsControl : System.Windows.Controls.ItemsControl
 {
     /// <summary>
@@ -45,6 +45,7 @@ public class VirtualizingItemsControl : System.Windows.Controls.ItemsControl
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="VirtualizingItemsControl"/> class.
     /// Constructor that initialize the <see cref="VirtualizingPanel"/>.
     /// </summary>
     public VirtualizingItemsControl()

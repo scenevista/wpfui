@@ -43,7 +43,7 @@ internal static class ContextMenuExtensions
 
         // Needs more work with the Popup service
 
-        //if (Background.Apply(source.Handle, BackgroundType.Mica))
+        // if (Background.Apply(source.Handle, BackgroundType.Mica))
         //    contextMenu.Background = Brushes.Transparent;
     }
 }

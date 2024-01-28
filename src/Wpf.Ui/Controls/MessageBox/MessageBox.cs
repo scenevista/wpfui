@@ -13,8 +13,8 @@ namespace Wpf.Ui.Controls;
 /// <summary>
 /// Customized window for notifications.
 /// </summary>
-//[ToolboxItem(true)]
-//[ToolboxBitmap(typeof(MessageBox), "MessageBox.bmp")]
+// [ToolboxItem(true)]
+// [ToolboxBitmap(typeof(MessageBox), "MessageBox.bmp")]
 public class MessageBox : System.Windows.Window
 {
     #region Static properties
@@ -361,7 +361,7 @@ public class MessageBox : System.Windows.Window
     {
         Size desiredSize = rootElement.DesiredSize;
 
-        //left and right margin
+        // left and right margin
         const double margin = 12.0 * 2;
 
         Width = desiredSize.Width + margin;
@@ -383,7 +383,7 @@ public class MessageBox : System.Windows.Window
 
     protected virtual void CenterWindowOnScreen()
     {
-        //TODO MessageBox should be displayed on the window on which the application
+        // TODO MessageBox should be displayed on the window on which the application
 
         double screenWidth = SystemParameters.PrimaryScreenWidth;
         double screenHeight = SystemParameters.PrimaryScreenHeight;

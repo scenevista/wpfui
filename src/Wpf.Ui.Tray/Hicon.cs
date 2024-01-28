@@ -41,7 +41,7 @@ internal static class Hicon
                 return IntPtr.Zero;
             }
 
-            //appIconsExtractIcon.ToBitmap();
+            // appIconsExtractIcon.ToBitmap();
 
             return appIconsExtractIcon.Handle;
         }
