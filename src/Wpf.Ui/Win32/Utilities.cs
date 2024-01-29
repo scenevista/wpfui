@@ -35,17 +35,17 @@ internal class Utilities
     /// <summary>
     /// Whether the operating system version is greater than or equal to 6.0.
     /// </summary>
-    public static bool IsOSVistaOrNewer => _osVersion >= new Version(6, 0);
+    public static bool IsOSVistaOrNewer => new Version(6, 0) <= _osVersion;
 
     /// <summary>
     /// Whether the operating system version is greater than or equal to 6.1.
     /// </summary>
-    public static bool IsOSWindows7OrNewer => _osVersion >= new Version(6, 1);
+    public static bool IsOSWindows7OrNewer => new Version(6, 1) <= _osVersion;
 
     /// <summary>
     /// Whether the operating system version is greater than or equal to 6.2.
     /// </summary>
-    public static bool IsOSWindows8OrNewer => _osVersion >= new Version(6, 2);
+    public static bool IsOSWindows8OrNewer => new Version(6, 2) <= _osVersion;
 
     /// <summary>
     /// Whether the operating system version is greater than or equal to 10.0* (build 10240).
@@ -146,7 +146,7 @@ internal class Utilities
                 )
             )
             {
-                version ??= String.Empty;
+                version ??= string.Empty;
 
                 var versionParts = ((string)version).Split('.');
 
@@ -169,7 +169,7 @@ internal class Utilities
                 )
             )
             {
-                minorObj ??= String.Empty;
+                minorObj ??= string.Empty;
 
                 minor = (int)minorObj;
             }
@@ -182,7 +182,7 @@ internal class Utilities
                 )
             )
             {
-                version ??= String.Empty;
+                version ??= string.Empty;
 
                 var versionParts = ((string)version).Split('.');
 
@@ -201,7 +201,7 @@ internal class Utilities
                 )
             )
             {
-                buildObj ??= String.Empty;
+                buildObj ??= string.Empty;
 
                 build = int.TryParse((string)buildObj, out int buildAsInt) ? buildAsInt : 0;
             }

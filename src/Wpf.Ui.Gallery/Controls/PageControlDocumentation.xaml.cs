@@ -118,7 +118,7 @@ public class PageControlDocumentation : Control
 
     private void OnClick(string? param)
     {
-        if (String.IsNullOrWhiteSpace(param) || _page is null)
+        if (string.IsNullOrWhiteSpace(param) || _page is null)
         {
             return;
         }
@@ -136,10 +136,10 @@ public class PageControlDocumentation : Control
                 => CreateUrlForDocumentation(documentationType),
             "xaml" => CreateUrlForGithub(_page.GetType(), ".xaml"),
             "c#" => CreateUrlForGithub(_page.GetType(), ".xaml.cs"),
-            _ => String.Empty
+            _ => string.Empty
         };
 
-        if (String.IsNullOrEmpty(navigationUrl))
+        if (string.IsNullOrEmpty(navigationUrl))
         {
             return;
         }
@@ -174,14 +174,14 @@ public class PageControlDocumentation : Control
             }
         }
 
-        return String.Concat(baseUrl, pageUrl, fileExtension);
+        return string.Concat(baseUrl, pageUrl, fileExtension);
     }
 
     private static string CreateUrlForDocumentation(Type type)
     {
         const string baseUrl = "https://wpfui.lepo.co/api/";
 
-        return String.Concat(baseUrl, type.FullName, ".html");
+        return string.Concat(baseUrl, type.FullName, ".html");
     }
 
     private static void SwitchThemes()

@@ -72,7 +72,7 @@ internal static class Highlighter
                 Group codeMatched = (Group)group;
 
                 // Remove empty groups
-                if (String.IsNullOrEmpty(codeMatched.Value))
+                if (string.IsNullOrEmpty(codeMatched.Value))
                     continue;
 
                 if (codeMatched.Value.Contains("\t"))
@@ -202,12 +202,12 @@ internal static class Highlighter
 
     private static string GetPattern(SyntaxLanguage language)
     {
-        return GetPattern(language, String.Empty);
+        return GetPattern(language, string.Empty);
     }
 
     private static string GetPattern(SyntaxLanguage language, string code)
     {
-        var pattern = String.Empty;
+        var pattern = string.Empty;
 
         // TODO: Auto detected
         if (language == SyntaxLanguage.Autodetect)

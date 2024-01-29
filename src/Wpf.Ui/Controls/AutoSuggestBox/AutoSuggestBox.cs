@@ -67,7 +67,7 @@ public class AutoSuggestBox : System.Windows.Controls.ItemsControl, IIconControl
         nameof(Text),
         typeof(string),
         typeof(AutoSuggestBox),
-        new PropertyMetadata(String.Empty, TextPropertyChangedCallback)
+        new PropertyMetadata(string.Empty, TextPropertyChangedCallback)
     );
 
     /// <summary>
@@ -77,7 +77,7 @@ public class AutoSuggestBox : System.Windows.Controls.ItemsControl, IIconControl
         nameof(PlaceholderText),
         typeof(string),
         typeof(AutoSuggestBox),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>
@@ -572,7 +572,7 @@ public class AutoSuggestBox : System.Windows.Controls.ItemsControl, IIconControl
 
     private void DefaultFiltering(string text)
     {
-        if (String.IsNullOrEmpty(text))
+        if (string.IsNullOrEmpty(text))
         {
             SetCurrentValue(ItemsSourceProperty, OriginalItemsSource);
 
@@ -600,9 +600,9 @@ public class AutoSuggestBox : System.Windows.Controls.ItemsControl, IIconControl
 
     private string? GetStringFromObj(object obj)
     {
-        var text = String.Empty;
+        var text = string.Empty;
 
-        if (!String.IsNullOrEmpty(DisplayMemberPath))
+        if (!string.IsNullOrEmpty(DisplayMemberPath))
         {
             // Maybe it needs some optimization?
             if (obj.GetType().GetProperty(DisplayMemberPath)?.GetValue(obj) is string value)
@@ -611,9 +611,9 @@ public class AutoSuggestBox : System.Windows.Controls.ItemsControl, IIconControl
             }
         }
 
-        if (String.IsNullOrEmpty(text))
+        if (string.IsNullOrEmpty(text))
         {
-            text = obj as String ?? obj.ToString();
+            text = obj as string ?? obj.ToString();
         }
 
         return text;

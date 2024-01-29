@@ -10,10 +10,10 @@ namespace Wpf.Ui.Extensions;
 /// </summary>
 public static class ColorExtensions
 {
-    /// <summary>
-    /// Maximum <see cref="Byte"/> size with the current <see cref="Single"/> precision.
-    /// </summary>
-    private static readonly float _byteMax = (float)Byte.MaxValue;
+	/// <summary>
+	/// Maximum <see cref="byte"/> size with the current <see cref="float"/> precision.
+	/// </summary>
+	private static readonly float _byteMax = byte.MaxValue;
 
     /// <summary>
     /// Creates a <see cref="SolidColorBrush"/> from a <see cref="System.Windows.Media.Color"/>.
@@ -449,7 +449,7 @@ public static class ColorExtensions
     {
         if (precision <= 0)
         {
-            precision = Single.Epsilon;
+            precision = float.Epsilon;
         }
 
         return numberOne >= (numberTwo - precision) && numberOne <= (numberTwo + precision);
@@ -473,13 +473,13 @@ public static class ColorExtensions
     /// </summary>
     private static byte ToColorByte(int value)
     {
-        if (value > Byte.MaxValue)
+        if (value > byte.MaxValue)
         {
-            value = Byte.MaxValue;
+            value = byte.MaxValue;
         }
-        else if (value < Byte.MinValue)
+        else if (value < byte.MinValue)
         {
-            value = Byte.MinValue;
+            value = byte.MinValue;
         }
 
         return Convert.ToByte(value);

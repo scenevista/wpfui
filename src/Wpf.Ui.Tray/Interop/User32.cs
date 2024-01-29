@@ -1039,7 +1039,7 @@ internal static class User32
             hInstance,
             lpParam
         );
-        if (IntPtr.Zero == ret)
+        if (ret == IntPtr.Zero)
         {
             throw new Exception("Unable to create a window");
             // HRESULT.ThrowLastError();
@@ -1478,7 +1478,7 @@ internal static class User32
     {
         int err = _SetWindowRgn(hWnd, hRgn, bRedraw);
 
-        if (0 == err)
+        if (err == 0)
         {
             throw new Win32Exception();
         }

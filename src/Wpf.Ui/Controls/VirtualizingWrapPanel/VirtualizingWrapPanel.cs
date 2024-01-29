@@ -183,7 +183,7 @@ public class VirtualizingWrapPanel : VirtualizingPanelBase
         else
             ChildSize = CalculateChildSize(availableSize);
 
-        ItemsPerRowCount = Double.IsInfinity(GetWidth(availableSize))
+        ItemsPerRowCount = double.IsInfinity(GetWidth(availableSize))
             ? Items.Count
             : Math.Max(1, (int)Math.Floor(GetWidth(availableSize) / GetWidth(ChildSize)));
 
@@ -475,7 +475,7 @@ public class VirtualizingWrapPanel : VirtualizingPanelBase
     private int GetRowIndex(double location)
     {
         var calculatedRowIndex = (int)Math.Floor(location / GetHeight(ChildSize));
-        var maxRowIndex = (int)Math.Ceiling((double)Items.Count / (double)ItemsPerRowCount);
+        var maxRowIndex = (int)Math.Ceiling(Items.Count / (double)ItemsPerRowCount);
 
         return Math.Max(Math.Min(calculatedRowIndex, maxRowIndex), 0);
     }

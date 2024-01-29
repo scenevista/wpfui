@@ -18,7 +18,7 @@ public class TreeGridHeader : System.Windows.FrameworkElement
         nameof(Title),
         typeof(string),
         typeof(TreeGridHeader),
-        new PropertyMetadata(String.Empty, OnTitleChanged)
+        new PropertyMetadata(string.Empty, OnTitleChanged)
     );
 
     /// <summary>
@@ -28,7 +28,7 @@ public class TreeGridHeader : System.Windows.FrameworkElement
         nameof(Group),
         typeof(string),
         typeof(TreeGridHeader),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>
@@ -58,7 +58,7 @@ public class TreeGridHeader : System.Windows.FrameworkElement
     {
         var title = Title;
 
-        if (!String.IsNullOrEmpty(Group) || String.IsNullOrEmpty(title))
+        if (!string.IsNullOrEmpty(Group) || string.IsNullOrEmpty(title))
             return;
 
         Group = title.ToLower().Trim();

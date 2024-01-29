@@ -647,7 +647,7 @@ public class TitleBar : System.Windows.Controls.Control, IThemeControl
     private T GetTemplateChild<T>(string name)
         where T : DependencyObject
     {
-        var element = base.GetTemplateChild(name);
+        var element = GetTemplateChild(name);
 
         if (element is null)
             throw new ArgumentNullException($"{name} is null");

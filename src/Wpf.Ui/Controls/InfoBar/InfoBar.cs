@@ -44,7 +44,7 @@ public class InfoBar : System.Windows.Controls.ContentControl
         nameof(Title),
         typeof(string),
         typeof(InfoBar),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>
@@ -54,7 +54,7 @@ public class InfoBar : System.Windows.Controls.ContentControl
         nameof(Message),
         typeof(string),
         typeof(InfoBar),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>

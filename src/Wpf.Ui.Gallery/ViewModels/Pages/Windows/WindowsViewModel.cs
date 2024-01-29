@@ -32,7 +32,7 @@ public partial class WindowsViewModel : ObservableObject
     [RelayCommand]
     public void OnOpenWindow(string value)
     {
-        if (String.IsNullOrEmpty(value))
+        if (string.IsNullOrEmpty(value))
         {
             return;
         }

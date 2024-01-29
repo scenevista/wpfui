@@ -25,15 +25,15 @@ public class SimpleContentDialogCreateOptions
     /// </summary>
     public required string CloseButtonText { get; set; }
 
-    /// <summary>
-    /// Gets or sets the default text of the primary button at the bottom of the content dialog.
-    /// <para>If not added, or <see cref="String.Empty"/>, it will not be displayed.</para>
-    /// </summary>
-    public string PrimaryButtonText { get; set; } = String.Empty;
+	/// <summary>
+	/// Gets or sets the default text of the primary button at the bottom of the content dialog.
+	/// <para>If not added, or <see cref="string.Empty"/>, it will not be displayed.</para>
+	/// </summary>
+	public string PrimaryButtonText { get; set; } = string.Empty;
 
-    /// <summary>
-    /// Gets or sets the default text of the secondary button at the bottom of the content dialog.
-    /// <para>If not added, or <see cref="String.Empty"/>, it will not be displayed.</para>
-    /// </summary>
-    public string SecondaryButtonText { get; set; } = String.Empty;
+	/// <summary>
+	/// Gets or sets the default text of the secondary button at the bottom of the content dialog.
+	/// <para>If not added, or <see cref="string.Empty"/>, it will not be displayed.</para>
+	/// </summary>
+	public string SecondaryButtonText { get; set; } = string.Empty;
 }

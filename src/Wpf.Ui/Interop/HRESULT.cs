@@ -15,22 +15,22 @@ internal struct HRESULT
     /// <summary>
     /// Operation successful.
     /// </summary>
-    public const int S_OK = unchecked((int)0x00000000);
+    public const int S_OK = unchecked(0x00000000);
 
     /// <summary>
     /// Operation successful.
     /// </summary>
-    public const int NO_ERROR = unchecked((int)0x00000000);
+    public const int NO_ERROR = unchecked(0x00000000);
 
     /// <summary>
     /// Operation successful.
     /// </summary>
-    public const int NOERROR = unchecked((int)0x00000000);
+    public const int NOERROR = unchecked(0x00000000);
 
     /// <summary>
     /// Unspecified failure.
     /// </summary>
-    public const int S_FALSE = unchecked((int)0x00000001);
+    public const int S_FALSE = unchecked(0x00000001);
 
     public static void Check(int hr)
     {

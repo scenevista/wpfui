@@ -13,22 +13,22 @@ public partial class IconsViewModel : ObservableObject, INavigationAware
 {
     private int _selectedIconId = 0;
 
-    private string _autoSuggestBoxText = String.Empty;
+    private string _autoSuggestBoxText = string.Empty;
 
     [ObservableProperty]
     private SymbolRegular _selectedSymbol = SymbolRegular.Empty;
 
     [ObservableProperty]
-    private string _selectedSymbolName = String.Empty;
+    private string _selectedSymbolName = string.Empty;
 
     [ObservableProperty]
-    private string _selectedSymbolUnicodePoint = String.Empty;
+    private string _selectedSymbolUnicodePoint = string.Empty;
 
     [ObservableProperty]
-    private string _selectedSymbolTextGlyph = String.Empty;
+    private string _selectedSymbolTextGlyph = string.Empty;
 
     [ObservableProperty]
-    private string _selectedSymbolXaml = String.Empty;
+    private string _selectedSymbolXaml = string.Empty;
 
     [ObservableProperty]
     private bool _isIconFilled = false;
@@ -133,7 +133,7 @@ public partial class IconsViewModel : ObservableObject, INavigationAware
     {
         _ = Task.Run(() =>
         {
-            if (String.IsNullOrEmpty(searchedText))
+            if (string.IsNullOrEmpty(searchedText))
             {
                 FilteredIconsCollection = IconsCollection;
 

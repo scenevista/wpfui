@@ -42,23 +42,23 @@ async Task<string> FetchVersion()
         )
             ?.Last()
             ?.Ref
-            .Replace("refs/tags/", String.Empty)
+            .Replace("refs/tags/", string.Empty)
             .Trim() ?? throw new Exception("Unable to parse the version string");
 }
 
 string FormatIconName(string rawIconName)
 {
     rawIconName = rawIconName
-        .Replace("ic_fluent_", String.Empty)
-        .Replace("_regular", String.Empty)
-        .Replace("_filled", String.Empty);
+        .Replace("ic_fluent_", string.Empty)
+        .Replace("_regular", string.Empty)
+        .Replace("_filled", string.Empty);
 
-    var iconName = String.Empty;
+    var iconName = string.Empty;
 
     foreach (var newPart in rawIconName.Split('_'))
     {
         var charactersArray = newPart.ToCharArray();
-        charactersArray[0] = Char.ToUpper(charactersArray[0]);
+        charactersArray[0] = char.ToUpper(charactersArray[0]);
 
         iconName += new string(charactersArray);
     }
@@ -115,9 +115,9 @@ async Task WriteToFile(FontSource singleFont, string fileRootDirectory)
         )
         .AppendLine("// Copyright (C) Leszek Pomianowski and WPF UI Contributors.")
         .AppendLine("// All Rights Reserved.")
-        .AppendLine(String.Empty)
+        .AppendLine(string.Empty)
         .AppendLine("namespace Wpf.Ui.Controls;")
-        .AppendLine(String.Empty)
+        .AppendLine(string.Empty)
         .AppendLine("/// <summary>")
         .AppendLine($"/// {singleFont.Description.Replace("\n", "\n/// ")}")
         .AppendLine("/// </summary>")
@@ -128,9 +128,9 @@ async Task WriteToFile(FontSource singleFont, string fileRootDirectory)
         .AppendLine("    /// Actually, this icon is not empty, but makes it easier to navigate.")
         .AppendLine("    /// </summary>")
         .AppendLine("    Empty = 0x0,")
-        .AppendLine(String.Empty)
+        .AppendLine(string.Empty)
         .AppendLine("    // Automatically generated, may contain bugs.")
-        .AppendLine(String.Empty);
+        .AppendLine(string.Empty);
 
     foreach (KeyValuePair<string, long> singleIcon in singleFont.Contents)
     {
@@ -138,7 +138,7 @@ async Task WriteToFile(FontSource singleFont, string fileRootDirectory)
         if (singleIcon.Value < 32)
         {
             _ = enumMapStringBuilder
-                .AppendLine(String.Empty)
+                .AppendLine(string.Empty)
                 .AppendLine("    /// <summary>")
                 .AppendLine("    /// Blank icon.")
                 .AppendLine("    /// </summary>");
@@ -149,7 +149,7 @@ async Task WriteToFile(FontSource singleFont, string fileRootDirectory)
 
     _ = enumMapStringBuilder
         .AppendLine("}")
-        .AppendLine(String.Empty)
+        .AppendLine(string.Empty)
         .AppendLine("#pragma warning restore CS1591")
         .Append("\r\n");
 

@@ -46,13 +46,13 @@ public class InfoBadge : System.Windows.Controls.Control
         nameof(CornerRadius),
         typeof(CornerRadius),
         typeof(InfoBadge),
-        (PropertyMetadata)
-            new FrameworkPropertyMetadata(
-                (object)new CornerRadius(8),
-                FrameworkPropertyMetadataOptions.AffectsMeasure
-                    | FrameworkPropertyMetadataOptions.AffectsRender
-            )
-    );
+
+			new FrameworkPropertyMetadata(
+				new CornerRadius(8),
+				FrameworkPropertyMetadataOptions.AffectsMeasure
+					| FrameworkPropertyMetadataOptions.AffectsRender
+			)
+	);
 
     /// <summary>
     /// Gets or sets the title of the <see cref="Severity" />.

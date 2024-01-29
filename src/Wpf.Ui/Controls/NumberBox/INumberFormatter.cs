@@ -13,18 +13,18 @@ namespace Wpf.Ui.Controls;
 /// </summary>
 public interface INumberFormatter
 {
-    /// <summary>
-    /// Returns a string representation of a <see cref="System.Double"/> value.
-    /// </summary>
-    string FormatDouble(double? value);
+	/// <summary>
+	/// Returns a string representation of a <see cref="double"/> value.
+	/// </summary>
+	string FormatDouble(double? value);
 
-    /// <summary>
-    /// Returns a string representation of an <see cref="System.Int32"/> value.
-    /// </summary>
-    string FormatInt(int? value);
+	/// <summary>
+	/// Returns a string representation of an <see cref="int"/> value.
+	/// </summary>
+	string FormatInt(int? value);
 
-    /// <summary>
-    /// Returns a string representation of a <see cref="System.UInt32"/> value.
-    /// </summary>
-    string FormatUInt(uint? value);
+	/// <summary>
+	/// Returns a string representation of a <see cref="uint"/> value.
+	/// </summary>
+	string FormatUInt(uint? value);
 }

@@ -29,7 +29,7 @@ internal static class Hicon
         {
             var processName = Process.GetCurrentProcess().MainModule?.FileName;
 
-            if (String.IsNullOrEmpty(processName))
+            if (string.IsNullOrEmpty(processName))
             {
                 return IntPtr.Zero;
             }

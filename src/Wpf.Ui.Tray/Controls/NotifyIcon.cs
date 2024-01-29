@@ -66,7 +66,7 @@ public class NotifyIcon : System.Windows.FrameworkElement
         nameof(TooltipText),
         typeof(string),
         typeof(NotifyIcon),
-        new PropertyMetadata(String.Empty, OnTooltipTextChanged)
+        new PropertyMetadata(string.Empty, OnTooltipTextChanged)
     );
 
     /// <summary>
@@ -96,7 +96,7 @@ public class NotifyIcon : System.Windows.FrameworkElement
         nameof(Icon),
         typeof(ImageSource),
         typeof(NotifyIcon),
-        new PropertyMetadata((ImageSource)null!, OnIconChanged)
+        new PropertyMetadata(null!, OnIconChanged)
     );
 
     /// <summary>
@@ -435,7 +435,7 @@ public class NotifyIcon : System.Windows.FrameworkElement
             return;
         }
 
-        notifyIcon.TooltipText = e.NewValue as string ?? String.Empty;
+        notifyIcon.TooltipText = e.NewValue as string ?? string.Empty;
     }
 
     private static void OnIconChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)

@@ -23,6 +23,13 @@ public class NotifyIconService : INotifyIconService
 
     public bool IsRegistered => this.internalNotifyIconManager.IsRegistered;
 
+    public NotifyIconService()
+    {
+        this.internalNotifyIconManager = new Internal.InternalNotifyIconManager();
+
+        RegisterHandlers();
+    }
+
     public string TooltipText
     {
         get => this.internalNotifyIconManager.TooltipText;
@@ -39,13 +46,6 @@ public class NotifyIconService : INotifyIconService
     {
         get => this.internalNotifyIconManager.Icon;
         set => this.internalNotifyIconManager.Icon = value;
-    }
-
-    public NotifyIconService()
-    {
-        this.internalNotifyIconManager = new Internal.InternalNotifyIconManager();
-
-        RegisterHandlers();
     }
 
     public bool Register()

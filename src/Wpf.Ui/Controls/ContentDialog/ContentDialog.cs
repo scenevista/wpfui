@@ -72,7 +72,7 @@ public class ContentDialog : ContentControl
         nameof(DialogWidth),
         typeof(double),
         typeof(ContentDialog),
-        new PropertyMetadata(Double.PositiveInfinity)
+        new PropertyMetadata(double.PositiveInfinity)
     );
 
     /// <summary>
@@ -82,7 +82,7 @@ public class ContentDialog : ContentControl
         nameof(DialogHeight),
         typeof(double),
         typeof(ContentDialog),
-        new PropertyMetadata(Double.PositiveInfinity)
+        new PropertyMetadata(double.PositiveInfinity)
     );
 
     /// <summary>
@@ -92,7 +92,7 @@ public class ContentDialog : ContentControl
         nameof(DialogMaxWidth),
         typeof(double),
         typeof(ContentDialog),
-        new PropertyMetadata(Double.PositiveInfinity)
+        new PropertyMetadata(double.PositiveInfinity)
     );
 
     /// <summary>
@@ -102,7 +102,7 @@ public class ContentDialog : ContentControl
         nameof(DialogMaxHeight),
         typeof(double),
         typeof(ContentDialog),
-        new PropertyMetadata(Double.PositiveInfinity)
+        new PropertyMetadata(double.PositiveInfinity)
     );
 
     /// <summary>
@@ -121,7 +121,7 @@ public class ContentDialog : ContentControl
         nameof(PrimaryButtonText),
         typeof(string),
         typeof(ContentDialog),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>
@@ -131,7 +131,7 @@ public class ContentDialog : ContentControl
         nameof(SecondaryButtonText),
         typeof(string),
         typeof(ContentDialog),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>

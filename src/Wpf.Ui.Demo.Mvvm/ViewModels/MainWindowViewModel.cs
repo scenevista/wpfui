@@ -13,7 +13,7 @@ public partial class MainWindowViewModel : ObservableObject
     private bool _isInitialized = false;
 
     [ObservableProperty]
-    private string _applicationTitle = String.Empty;
+    private string _applicationTitle = string.Empty;
 
     [ObservableProperty]
     private ObservableCollection<object> _navigationItems = new();

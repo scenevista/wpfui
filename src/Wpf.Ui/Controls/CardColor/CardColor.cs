@@ -18,7 +18,7 @@ public class CardColor : System.Windows.Controls.Control
         nameof(Title),
         typeof(string),
         typeof(CardColor),
-        new PropertyMetadata(String.Empty)
+        new PropertyMetadata(string.Empty)
     );
 
     /// <summary>
@@ -28,7 +28,7 @@ public class CardColor : System.Windows.Controls.Control
         nameof(Subtitle),
         typeof(string),
         typeof(CardColor),
-        new PropertyMetadata(String.Empty, OnSubtitlePropertyChanged)
+        new PropertyMetadata(string.Empty, OnSubtitlePropertyChanged)
     );
 
     /// <summary>

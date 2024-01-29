@@ -110,7 +110,7 @@ public class ControlExample : Control
         {
             if (Application.GetResourceStream(uri) is not { } steamInfo)
             {
-                return String.Empty;
+                return string.Empty;
             }
 
             using StreamReader streamReader = new(steamInfo.Stream, Encoding.UTF8);
